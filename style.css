@@ -1,0 +1,89 @@
+header{
+    color: #0ffc27;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #000000; 
+    margin: 0;
+}
+
+h1 {
+    color: #c41616;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #666;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px);   
+    gap: 5px;
+    margin-bottom: 20px;
+    background-color: #666;
+    border: 5px solid #666; 
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #481212; 
+    border: 1px solid #ccc; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+    color: #333;
+}
+
+.cell:hover {
+    background-color: #5a5a5a; 
+}
+
+
+.cell.x {
+    color: #007bff; 
+}
+
+
+.cell.o {
+    color: #dc3545; 
+}
+
+#statusDisplay {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1400f1;
+    margin-bottom: 15px;
+    min-height: 1.5em; 
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1bde0d; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#restartButton:hover {
+    background-color: #218838; 
+}
+
+footer{
+    color: #666;
+}
