@@ -1,3 +1,6 @@
+
+                                    //  #This Javascripts is written by Github Copilot#
+
 // --- DOM Elements ---
 const statusDisplay = document.querySelector('#statusDisplay');
 const gameBoard = document.querySelector('#gameBoard');
