@@ -1,89 +1,104 @@
-header{
-    color: #0ffc27;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    
+    font-family: 'Poppins', sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh; 
-    background-color: #000000; 
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #2c3e50, #1a252f); 
+    color: #ecf0f1; 
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+header {
+    color: #3498db; 
+    margin-bottom: 15px; 
+    font-size: 0.9em;
 }
 
 h1 {
-    color: #c41616;
-    margin-bottom: 20px;
-}
-
-h4 {
-    color: #666;
+    color: #e74c3c; 
+    margin-bottom: 30px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
 }
 
 #gameBoard {
     display: grid;
-    grid-template-columns: repeat(3, 100px); 
-    grid-template-rows: repeat(3, 100px);   
-    gap: 5px;
-    margin-bottom: 20px;
-    background-color: #666;
-    border: 5px solid #666; 
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    margin-bottom: 30px; 
+    background-color: #34495e; 
+    padding: 8px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #481212; 
-    border: 1px solid #ccc; 
+    background-color: #ecf0f1; 
+    border: none;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em; 
+    font-size: 4em; 
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out; 
-    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    color: #2c3e50; 
 }
 
 .cell:hover {
-    background-color: #5a5a5a; 
+    background-color: #bdc3c7; 
+    transform: scale(1.03);
 }
-
 
 .cell.x {
-    color: #007bff; 
+    color: #3498db; 
 }
 
-
 .cell.o {
-    color: #dc3545; 
+    color: #e74c3c; 
 }
 
 #statusDisplay {
-    font-size: 1.2em;
+    font-size: 1.5em; 
     font-weight: bold;
-    color: #1400f1;
-    margin-bottom: 15px;
-    min-height: 1.5em; 
+    color: #f1c40f;
+    margin-bottom: 25px; 
+    min-height: 1.5em;
+    text-align: center;
 }
 
 #restartButton {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 25px; 
+    font-size: 1.1em;
     color: #fff;
-    background-color: #1bde0d; 
+    background-color: #2ecc71; 
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 #restartButton:hover {
-    background-color: #218838; 
+    background-color: #27ae60;
+    transform: translateY(-2px);
 }
 
-footer{
-    color: #666;
+footer {
+    color: #7f8c8d; 
+    font-size: 0.8em;
+    margin-top: auto; 
+    padding-top: 20px; 
 }
+
